@@ -1,0 +1,24 @@
+vpc_name                 : vpc_workshop
+vpc_region               : "eu-west-3"
+description              : vpc for test
+number_az                : 3
+cidr_principal           : 10.0.0.0/16
+enable_internet_gateway  : true
+subnets: 
+      - 
+          application     : "public_subnet1"
+          cidr             : 10.0.1.0/24
+          availability_zone: "eu-west-3a"
+          is_public        : true
+      - 
+          application      : "private_subnet1"
+          cidr             : 10.0.2.0/24
+          availability_zone: "eu-west-3b"
+          is_public        : false
+      - 
+          application      : "private_subnet2"
+          cidr             : 10.0.3.0/24
+          availability_zone: "eu-west-3c"
+          is_public        : false
+
+
