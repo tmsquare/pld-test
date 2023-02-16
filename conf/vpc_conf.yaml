@@ -20,5 +20,10 @@ subnets:
           cidr             : 10.0.3.0/24
           availability_zone: "eu-west-3c"
           is_public        : false
+      - 
+          application      : "private_subnet3"
+          cidr             : 10.0.4.0/24
+          availability_zone: "eu-west-3c"
+          is_public        : false
 
 
